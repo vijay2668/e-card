@@ -6,7 +6,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-const upgradePage = () => {
+const UpgradePage = () => {
   const [check, setcheck] = useState(false);
   const [result, setresult] = useState("");
   const [user] = useAuthState(auth);
@@ -290,4 +290,4 @@ const upgradePage = () => {
   }
 };
 
-export default upgradePage;
+export default UpgradePage;
