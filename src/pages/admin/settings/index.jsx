@@ -35,11 +35,13 @@ const SettingsPage = () => {
     });
   }
   
-  if(!user){
-    console.log("Sign-out successful.")
-    localStorage.clear();
-    router.push("/");
-  }
+    useEffect(()=>{
+    if(!user){
+      console.log("Sign-out successful.")
+      localStorage.clear();
+      router.push("/");
+    }
+  },[router, user])
 
 // console.log(check)
 if(user && result){
