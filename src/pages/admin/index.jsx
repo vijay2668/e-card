@@ -1,5 +1,5 @@
 "use client";
-import { auth, db, storage } from "@/firebase";
+// import { auth, db, storage } from "@/firebase";
 import {
   currentMRROfStartup,
   currentMRROfStartupShow,
@@ -15,13 +15,13 @@ import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
-import { isSignInWithEmailLink, signInWithEmailLink } from "firebase/auth";
 import { useRouter } from "next/router";
 import getData from "@/fetch";
 import Share from "../components/Share";
 import { GrClose } from "react-icons/gr";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { FaLock } from "react-icons/fa";
+import { auth, db } from "@/firebase/config";
 const socialMedia = ["Twitter", "GitHub", "YouTube", "LinkedIn", "Email"];
 
 const AdminPage = () => {
@@ -1035,7 +1035,7 @@ if(user && result){
                 <div className="absolute inset-0 z-10">
                   {result?.name && (
                     <iframe
-                      src={`http://localhost:3000/${result?.name}?key=7&zoom=80&track=0`}
+                      src={`https://up-page.netlify.app/${result?.name}?key=7&zoom=80&track=0`}
                       className="h-full w-full"
                       ref={iframeRef}
                     ></iframe>
@@ -1050,7 +1050,7 @@ if(user && result){
         </>
       ) : (
         <iframe
-          src={`http://localhost:3000/${result?.name}?key=7&zoom=80&track=0`}
+          src={`https://up-page.netlify.app/${result?.name}?key=7&zoom=80&track=0`}
           className="h-full w-full"
           ref={iframeRef}
         ></iframe>
