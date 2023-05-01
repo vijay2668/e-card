@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const NotFound = () => {
   const router = useRouter();
