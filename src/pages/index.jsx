@@ -57,8 +57,8 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="form-control border border-base-content/20 rounded-lg ">
                     <label className="input-group group w-full">
-                      <span className='bg-base-300 text-base-content/60 pr-0 select-none"'>
-                        up&ndash;page.netlify.app/
+                      <span className='whitespace-nowrap bg-base-300 text-base-content/60 pr-0 select-none"'>
+                        up-page.netlify.app/
                       </span>
                       <input
                         type="text"
@@ -2086,8 +2086,8 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="form-control border border-base-content/20 rounded-lg ">
                     <label className="input-group group w-full">
-                      <span className='bg-base-200 text-base-content/60 pr-0 select-none"'>
-                        up&ndash;page.netlify.app/
+                      <span className='whitespace-nowrap bg-base-200 text-base-content/60 pr-0 select-none"'>
+                        up-page.netlify.app/
                       </span>
                       <input
                         type="text"
