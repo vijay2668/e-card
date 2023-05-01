@@ -20,7 +20,7 @@ export default function Home() {
           <header className="flex justify-between gap-4 mb-4 md:mb-6">
             <Link className="flex items-center gap-2" href="">
               <img
-                alt="Indie Page logo"
+                alt="Up Page logo"
                 width="500"
                 height="500"
                 decoding="async"
@@ -30,7 +30,7 @@ export default function Home() {
                 srcSet=""
                 src=""
               />
-              <p className="font-semibold">Indie Page</p>
+              <p className="font-semibold">Up Page</p>
             </Link>
             <div className="hidden md:inline-flex items-center gap-8 flex-1 px-16">
               <Link className="link link-hover" href="#pricing">
@@ -58,7 +58,7 @@ export default function Home() {
                   <div className="form-control border border-base-content/20 rounded-lg ">
                     <label className="input-group group w-full">
                       <span className='bg-base-300 text-base-content/60 pr-0 select-none"'>
-                        indiepa.ge/
+                        up-page.netlify.app/
                       </span>
                       <input
                         type="text"
@@ -80,7 +80,7 @@ export default function Home() {
                   className="btn btn-primary btn-wide group "
                   type="submit"
                 >
-                  Claim your indie page{" "}
+                  Claim your Up page{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -2087,7 +2087,7 @@ export default function Home() {
                   <div className="form-control border border-base-content/20 rounded-lg ">
                     <label className="input-group group w-full">
                       <span className='bg-base-200 text-base-content/60 pr-0 select-none"'>
-                        indiepa.ge/
+                        up-page.netlify.app/
                       </span>
                       <input
                         type="text"
@@ -2131,7 +2131,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <footer className="footer">
               <div>
-                <span className="footer-title">Indie Page</span>
+                <span className="footer-title">Up Page</span>
                 <Link className="link link-hover" href="/login">
                   Login
                 </Link>
