@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Share = ({ check, setcheck, result }) => {
   const [change, setchange] = useState(false)
