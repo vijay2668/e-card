@@ -1,5 +1,5 @@
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "./firebase";
+import { db } from "./firebase/config";
 
 export default async function getData() {
   const uid = localStorage.getItem("uid")
