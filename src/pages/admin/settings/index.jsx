@@ -5,8 +5,8 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Share from "@/pages/components/Share";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "@/firebase";
 import { signOut } from "firebase/auth";
+import { auth } from "@/firebase/config";
 
 const SettingsPage = () => {
   const [check, setcheck] = useState(false)
@@ -35,7 +35,7 @@ const SettingsPage = () => {
     });
   }
   
-    useEffect(()=>{
+  useEffect(()=>{
     if(!user){
       console.log("Sign-out successful.")
       localStorage.clear();
@@ -233,7 +233,7 @@ if(user && result){
         <div className="space-y-2">
           <p>Youre signed up as {email}</p>
           <p className="text-sm text-base-content/80 select-all">
-            localhost:3000/{result?.name || "your name"}
+            up-page.netlify.app/{result?.name || "your name"}
           </p>
         </div>
         <div className="flex items-center justify-center gap-2">
