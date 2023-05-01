@@ -1,7 +1,6 @@
 "use client ";
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/login.module.css";
-import { auth, db } from "@/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import {
   isSignInWithEmailLink,
@@ -9,8 +8,8 @@ import {
   signInWithEmailLink
 } from "firebase/auth";
 import { useRouter } from "next/router";
-import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
-import getData from "@/fetch";
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { auth, db } from "@/firebase/config";
 
 const LoginPage = () => {
   const [user] = useAuthState(auth);
@@ -45,7 +44,7 @@ const LoginPage = () => {
           console.log('@shit');
         }
         // user is already signed in
-        console.log(user);
+        // console.log(user);
         router.push('/admin');
       } else {
         // user is not signed in but the link is valid
@@ -60,7 +59,7 @@ const LoginPage = () => {
           signInWithEmailLink(auth, email, window.location.href)
             .then((result) => {
               // we can get the user from result.user but no need in this case
-              console.log(result.user);
+              // console.log(result.user);
               localStorage.removeItem("email");
               setInitialLoading(false);
               setInitialError("");
@@ -83,7 +82,7 @@ const LoginPage = () => {
   const actionCodeSettings = {
     // URL you want to redirect back to. The domain (www.example.com) for this
     // URL must be in the authorized domains list in the Firebase Console.
-    url: "http://localhost:3000/login",
+    url: "https://up-page.netlify.app/login",
     // This must be true.
     handleCodeInApp: true
   };
