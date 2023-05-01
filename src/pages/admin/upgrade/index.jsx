@@ -3,7 +3,7 @@ import getData from "@/fetch";
 import { auth } from "@/firebase";
 import Share from "@/pages/components/Share";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 const UpgradePage = () => {
