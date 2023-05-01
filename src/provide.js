@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { arrayRemove, arrayUnion, doc, updateDoc } from "firebase/firestore";
-import { db } from "./firebase";
+import { db } from "./firebase/config";
 
 const provideIcon = (info) => {
   if (info?.includes("mail")) {
