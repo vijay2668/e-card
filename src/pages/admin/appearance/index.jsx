@@ -1,5 +1,5 @@
 import getData from "@/fetch";
-import { auth, db } from "@/firebase";
+import { auth, db } from "@/firebase/config";
 import Share from "@/pages/components/Share";
 import { doc, updateDoc } from "firebase/firestore";
 import Link from "next/link";
@@ -332,7 +332,7 @@ const AppearancePage = () => {
                   <div className="absolute inset-0 z-10">
                     {result?.name && (
                       <iframe
-                        src={`http://localhost:3000/${result?.name}?key=7&zoom=80&track=0`}
+                        src={`https://up-page.netlify.app/${result?.name}?key=7&zoom=80&track=0`}
                         className="h-full w-full"
                         ref={iframeRef}
                       ></iframe>
@@ -344,7 +344,7 @@ const AppearancePage = () => {
           </>
         ) : (
           <iframe
-            src={`http://localhost:3000/${result?.name}?key=7&zoom=80&track=0`}
+            src={`https://up-page.netlify.app/${result?.name}?key=7&zoom=80&track=0`}
             className="h-full w-full"
             ref={iframeRef}
           ></iframe>
