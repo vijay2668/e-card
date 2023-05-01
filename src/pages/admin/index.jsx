@@ -1043,7 +1043,7 @@ if(user && result){
                 </div>
               </div>
               <p className="text-sm text-base-content/80 mt-2 text-center select-all">
-                {`localhost:3000/${result?.name}`}
+                {`up-page.netlify.app/${result?.name}`}
               </p>
             </div>
           </div>
