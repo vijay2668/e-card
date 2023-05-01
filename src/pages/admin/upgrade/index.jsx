@@ -1,6 +1,6 @@
 "use client"
 import getData from "@/fetch";
-import { auth } from "@/firebase";
+import { auth } from "@/firebase/config";
 import Share from "@/pages/components/Share";
 import Link from "next/link";
 import { useEffect, useState } from "react";
