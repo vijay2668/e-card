@@ -21,7 +21,7 @@ import Share from "../components/Share";
 import { GrClose } from "react-icons/gr";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { FaLock } from "react-icons/fa";
-import { auth, db } from "@/firebase/config";
+import { auth, db, storage } from "@/firebase/config";
 const socialMedia = ["Twitter", "GitHub", "YouTube", "LinkedIn", "Email"];
 
 const AdminPage = () => {
