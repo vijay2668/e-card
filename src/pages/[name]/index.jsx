@@ -8,7 +8,7 @@ import { collection, getDocs, query } from "firebase/firestore";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Share from "../components/Share";
 import { db } from "@/firebase/config";
 
