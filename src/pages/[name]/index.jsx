@@ -335,7 +335,7 @@ const UserData = () => {
                   Built
                   <span className="inline md:hidden">w/</span>
                   <span className="hidden md:inline">with</span>
-                  Indie Page
+                    Up Page
                 </div>
               </div>
             </div>
