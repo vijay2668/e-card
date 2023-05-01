@@ -99,7 +99,7 @@ export default function Home() {
             <div className="relative border-[8px] lg:border-[14px] border-black rounded-3xl lg:rounded-[3.5rem] w-64 lg:w-80 xl:w-96 aspect-[9/19] overflow-hidden max-w-sm mx-auto transitionfix">
               <div className="camera"></div>
               <div className="absolute inset-0 z-10">
-                <iframe className="w-full h-full" src="http://localhost:3000/vijay" ></iframe>
+                <iframe className="w-full h-full" src="https://up-page.netlify.app/vijay" ></iframe>
               </div>
             </div>
             {/* <div className="border-t-[12px] border-l-[12px] border-r-[12px] lg:border-[14px]  border-black/75 bg-base-100 rounded-t-[3.5rem] lg:rounded-[4rem] overflow-hidden max-h-[28rem] md:max-h-none md:max-w-[24rem] md:aspect-[9/18] md:order-first">
