@@ -17,106 +17,106 @@ export default function Home() {
     <div id="__next">
       <main>
         <section className="min-h-screen max-w-6xl mx-auto p-6 pb-0">
-  <header className="flex justify-between items-center gap-4 mb-4 md:mb-6">
-    <Link className="flex items-center gap-2" href="/">
-      <img
-        alt="Up Page logo"
-        width="500"
-        height="500"
-        decoding="async"
-        data-nimg="1"
-        className="w-8 h-8"
-        style={{ color: "transparent" }}
-        srcSet=""
-        src=""
-      />
-      <p className="font-semibold">Up Page</p>
-    </Link>
-    <nav className="hidden md:inline-flex items-center gap-8 flex-1 px-16">
-      <Link className="link link-hover" href="#pricing">
-        Pricing
-      </Link>
-      <Link className="link link-hover" href="#signup">
-        Signup
-      </Link>
-    </nav>
-    <Link href="/login">
-      <button className="btn btn-sm">Log in</button>
-    </Link>
-  </header>
-  <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-16">
-    <div className="space-y-6 md:space-y-8 max-w-xl">
-      <h1 className="text-4xl md:text-5xl tracking-tight font-black leading-tight md:leading-tight lg:text-6xl lg:leading-tight">
-        All your startups, on a page
-      </h1>
-      <p className="text-lg text-base-content-secondary leading-7">
-        Linktree for entrepreneurs. Everything you build, your apps,
-        your MRR, in one simple link in bio.
-      </p>
-      <form onSubmit={handleSubmit} className="flex flex-wrap gap-2">
-        <div className="flex-1">
-          <div className="form-control border border-base-content/20 rounded-lg">
-            <label className="input-group group w-full">
-              <span className="whitespace-nowrap bg-base-300 text-base-content/60 pr-0 select-none">
-                up-page.netlify.app/
-              </span>
-              <input
-                type="text"
-                placeholder="yourname"
-                className="input placeholder:text-base-content/60 pl-0.5 w-full min-w-[8rem] bg-base-300"
-                autoCapitalize="none"
-                autoComplete="off"
-                spellCheck="false"
-                minLength="2"
-                maxLength="20"
-                required=""
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+          <header className="flex justify-between gap-4 mb-4 md:mb-6">
+            <Link className="flex items-center gap-2" href="">
+              <img
+                alt="Up Page logo"
+                width="500"
+                height="500"
+                decoding="async"
+                data-nimg="1"
+                className="w-8 h-8"
+                style={{ color: "transparent" }}
+                srcSet=""
+                src=""
               />
-            </label>
+              <p className="font-semibold">Up Page</p>
+            </Link>
+            <div className="hidden md:inline-flex items-center gap-8 flex-1 px-16">
+              <Link className="link link-hover" href="#pricing">
+                Pricing
+              </Link>
+              <Link className="link link-hover" href="#signup">
+                Signup
+              </Link>
+            </div>
+            <Link href="/login">
+              <button className="btn btn-sm">Log in</button>
+            </Link>
+          </header>
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-16">
+            <div className="space-y-6 md:space-y-8 max-w-xl">
+              <h1 className="text-4xl md:text-5xl tracking-tight font-black leading-tight md:leading-tight lg:text-6xl lg:leading-tight">
+                All your startups, on a page
+              </h1>
+              <p className="text-lg text-base-content-secondary leading-7">
+                Linktree for entrepreneurs. Everything you build, your apps,
+                your MRR, in one simple link in bio.
+              </p>
+              <form onSubmit={handleSubmit} className="flex flex-wrap gap-2 undefined">
+                <div className="flex-1">
+                  <div className="form-control border border-base-content/20 rounded-lg ">
+                    <label className="input-group group w-full">
+                      <span className='whitespace-nowrap bg-base-300 text-base-content/60 pr-0 select-none"'>
+                        up-page.netlify.app/
+                      </span>
+                      <input
+                        type="text"
+                        placeholder="yourname"
+                        className="input placeholder:text-base-content/60 pl-0.5 w-full min-w-[8rem] bg-base-300"
+                        autoCapitalize="none"
+                        autoComplete="off"
+                        spellCheck="false"
+                        minLength="2"
+                        maxLength="20"
+                        required=""
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                    </label>
+                  </div>
+                </div>
+                <button
+                  className="btn btn-primary btn-wide group "
+                  type="submit"
+                >
+                  Claim your Up page{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="w-5 h-5 ml-1 group-hover:translate-x-1 duration-200"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div className="relative border-[8px] lg:border-[14px] border-black rounded-3xl lg:rounded-[3.5rem] w-64 lg:w-80 xl:w-96 aspect-[9/19] overflow-hidden max-w-sm mx-auto transitionfix">
+              <div className="camera"></div>
+              <div className="absolute inset-0 z-10">
+                <iframe className="w-full h-full" src="https://up-page.netlify.app/vijay" ></iframe>
+              </div>
+            </div>
+            {/* <div className="border-t-[12px] border-l-[12px] border-r-[12px] lg:border-[14px]  border-black/75 bg-base-100 rounded-t-[3.5rem] lg:rounded-[4rem] overflow-hidden max-h-[28rem] md:max-h-none md:max-w-[24rem] md:aspect-[9/18] md:order-first">
+              <img
+                alt="Marc Lou Indie Page"
+                width="850"
+                height="1838"
+                decoding="async"
+                data-nimg="1"
+                className="duration-200 animate-appearFromRight rounded-t-3xl lg:rounded-3xl"
+                srcSet=""
+                src=""
+                style={{ color: "transparent" }}
+              />
+            </div> */}
           </div>
-        </div>
-        <button className="btn btn-primary btn-wide group" type="submit">
-          Claim your Up page{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="w-5 h-5 ml-1 group-hover:translate-x-1 duration-200"
-          >
-            <path
-              fillRule="evenodd"
-              d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
-              clipRule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </form>
-    </div>
-    <div className="relative border-[8px] lg:border-[14px] border-black rounded-3xl lg:rounded-[3.5rem] w-64 lg:w-80 xl:w-96 aspect-[9/19] overflow-hidden max-w-sm mx-auto transitionfix">
-      <div className="camera"></div>
-      <div className="absolute inset-0 z-10">
-        <iframe
-          className="w-full h-full"
-          src="https://up-page.netlify.app/vijay"
-        ></iframe>
-      </div>
-    </div>
-    {/* <div className="border-t-[12px] border-l-[12px] border-r-[12px] lg:border-[14px]  border-black/75 bg-base-100 rounded-t-[3.5rem] lg:rounded-[4rem] overflow-hidden max-h-[28rem] md:max-h-none md:max-w-[24rem] md:aspect-[9/18] md:order-first">
-      <img
-        alt="Marc Lou Indie Page"
-        width="850"
-        height="1838"
-        decoding="async"
-        data-nimg="1"
-        className="duration-200 animate-appearFromRight rounded-t-3xl lg:rounded-3xl"
-        srcSet=""
-        src=""
-        style={{ color: "transparent" }}
-      />
-    </div> */}
-  </div>
-</section>
+        </section>
 
         {/* <section className="bg-base-200 p-6 py-16 md:py-32">
           <div className="space-y-12 md:space-y-24">
